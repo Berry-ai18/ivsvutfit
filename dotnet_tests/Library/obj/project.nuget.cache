@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WBVRa0M/YlBNE/KDcscLQ5rFBtry45SXT7RuNv+q9M/+8xb377qiSdL2aqC6F49lu4p3R8nSUIFDrzdVwEOqOg==",
+  "success": true,
+  "projectFilePath": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/dotnet_tests/Library/Library.csproj",
+  "expectedPackageFiles": [
+    "/home/peterc/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/peterc/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
