@@ -2,7 +2,10 @@
 using System.Text;
 using System.IO;
 using System.Text.RegularExpressions;
-//using Library;
+using Math_Library;
+// nasa kniznica
+
+
 
 
 // Vytvorit pomocou matematickej kniznice(nasej) 
@@ -22,7 +25,10 @@ namespace Smerodatna_Odchylka
         public static int Vypocet(string vstup)
         {
             double num = double.Parse(vstup);
-            Console.WriteLine(num);
+            var obj = new Math_lib();
+            double res = absh.abs(num); 
+
+            Console.WriteLine("Cislo je: " + num);
             return 0;
         }
         public static void Main()
