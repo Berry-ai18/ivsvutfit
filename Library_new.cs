@@ -4,6 +4,8 @@ namespace Library
 {
     public class TheClassToTest{
 
+        static void Main(string[] args){
+
         public double plus(double x, double y){
 
             return x + y;
@@ -92,5 +94,6 @@ namespace Library
             return x;
         }
     }
+}
 }
 
