@@ -3526,11 +3526,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/dotnet_tests/Math_Tests/Math_Tests.csproj",
+      "projectUniqueName": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/git/ivsvutfit/dotnet_tests/Math_Tests/Math_Tests.csproj",
       "projectName": "Math_Tests",
-      "projectPath": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/dotnet_tests/Math_Tests/Math_Tests.csproj",
+      "projectPath": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/git/ivsvutfit/dotnet_tests/Math_Tests/Math_Tests.csproj",
       "packagesPath": "/home/peterc/.nuget/packages/",
-      "outputPath": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/dotnet_tests/Math_Tests/obj/",
+      "outputPath": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/git/ivsvutfit/dotnet_tests/Math_Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/peterc/.nuget/NuGet/NuGet.Config"
@@ -3544,8 +3544,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/home/peterc/Desktop/FIT/projekt_ivs/proj2/dotnet_tests/Library/Library.csproj": {
-              "projectPath": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/dotnet_tests/Library/Library.csproj"
+            "/home/peterc/Desktop/FIT/projekt_ivs/proj2/git/ivsvutfit/dotnet_tests/Library/Library.csproj": {
+              "projectPath": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/git/ivsvutfit/dotnet_tests/Library/Library.csproj"
             }
           }
         }

@@ -2,77 +2,80 @@
 
 namespace Library
 {
-    public class TheClassToTest
-    {
+    public class TheClassToTest{
 
-	public double Add(double x, double y)
-	{
-		return x + y;
-	}
+        public double plus(double x, double y){
 
-	public double Substract(double x, double y)
-	{
-		return x - y;
-	}
+            return x + y;
 
-	public double Multiply(double x, double y)
-	{
-		return x * y;
-	}
+        }
 
-	public double Devide(double x, double y)
-	{
-		// Uprav si to len aby si vedel try/catch pre delenie 0
-		try
-		{
-			double res = x/y;
-		}
-		catch (System.Exception)
-		{
-			Console.WriteLine("Chyba");
-		}
+        public double minus(double x, double y){
 
-		return x/y;
-	}
-	
+            return x - y;
 
-	// Vracia Int
-	// Faktorial z des.cisla neexistuje
-	public int Factorial(int x)
-	{
-	// Dopln si implementaciu
-		return 0;
-	}
+        }
 
+        public double mul(double x, double y){
+        
+            return x * y;
 
-	// Vracia double
-	// Zaklad moze byt double
-	// Exponent musi byt cele cislo
-    public double Power(double zaklad, int exponent)
-	{
-	// Dopln si implementaciu
-		return 0;
-	}
+        }
 
+        public double div(double x, double y){
+        
+            return  x / y;
 
-	// Vracia double
-	// Zaklad moze byt double
-	// Odmocnitel musi byt cele cislo
-	public double Root(double zaklad, int index)
-	{
-	// Dopln si Implementaciu
-		return 0;
-	}
+        }
 
-	
-	// Vracia double
-	// Vypocita absolutnu hodnotu z X
+        public double exp(double x, double y){
 
-	public double Abs(double x)
-	{
-	// Dopln si implementaciu
-		return 0;
-	}
+            double result = 1;
+            for (double i = 0; i < y; i++){
+                result = result * x;
+            }
+            return result;
+        }
 
+        public double fact(double x){
+
+            double result = 1;
+            for (double i = x; i > 1; i--)
+            {
+            result = result * i;
+            }
+        	return result;
+        }
+
+        public double sqrt(double x, double y){
+            // x je zaklad
+            // y je index
+
+        double xPre = 1;
+
+        double eps = 0.0001;
+
+        double delX = 2147483647; 
+        double xK = 0.0;
+
+        while (delX > eps) 
+        { 
+            xK = ((y- 1.0) * xPre + 
+            (double)x / exp(xPre, y - 1)) / (double)y; 
+            delX = abs(xK - xPre); 
+            xPre = xK; 
+        } 
+      
+        return xK; 
+        }
+
+        public double abs(double x){
+            
+            if (x < 0)
+            {
+                return -x;
+            }
+            return x;
+        }
     }
 }

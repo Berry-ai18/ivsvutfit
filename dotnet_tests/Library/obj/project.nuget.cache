@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WBVRa0M/YlBNE/KDcscLQ5rFBtry45SXT7RuNv+q9M/+8xb377qiSdL2aqC6F49lu4p3R8nSUIFDrzdVwEOqOg==",
+  "dgSpecHash": "u5q7YYlju6Veq9tEhHNdUFPOhb8qQ1JN8CsbGSgAu05wlq4KqJ/aFOtBti8guTvK7ZA3yoYM0U3SgGnD2bzyww==",
   "success": true,
-  "projectFilePath": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/dotnet_tests/Library/Library.csproj",
+  "projectFilePath": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/git/ivsvutfit/dotnet_tests/Library/Library.csproj",
   "expectedPackageFiles": [
     "/home/peterc/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/home/peterc/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CFNmjIWqrFFXwfLiGHvKj3N/HVOsY8XXpAWtGpFADnQV3bFCCFAFfI2O0V8kBy7DueLrqJNkeZ9KobSOqQ8GSQ==",
+  "dgSpecHash": "159o+D+TqhtD/+cX8nNDRTso6Ph5CoqmhpgvG7gUztN5Bo39SxKYfgluMPYUnf+eBPXuNYx6R/6nThD9BV8D3A==",
   "success": true,
-  "projectFilePath": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/dotnet_tests/Math_Tests/Math_Tests.csproj",
+  "projectFilePath": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/git/ivsvutfit/dotnet_tests/Math_Tests/Math_Tests.csproj",
   "expectedPackageFiles": [
     "/home/peterc/.nuget/packages/coverlet.collector/1.2.0/coverlet.collector.1.2.0.nupkg.sha512",
     "/home/peterc/.nuget/packages/microsoft.codecoverage/16.5.0/microsoft.codecoverage.16.5.0.nupkg.sha512",

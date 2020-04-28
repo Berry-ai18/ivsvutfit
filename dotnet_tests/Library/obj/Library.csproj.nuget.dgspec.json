@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/peterc/Desktop/FIT/projekt_ivs/proj2/dotnet_tests/Library/Library.csproj": {}
+    "/home/peterc/Desktop/FIT/projekt_ivs/proj2/git/ivsvutfit/dotnet_tests/Library/Library.csproj": {}
   },
   "projects": {
-    "/home/peterc/Desktop/FIT/projekt_ivs/proj2/dotnet_tests/Library/Library.csproj": {
+    "/home/peterc/Desktop/FIT/projekt_ivs/proj2/git/ivsvutfit/dotnet_tests/Library/Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/dotnet_tests/Library/Library.csproj",
+        "projectUniqueName": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/git/ivsvutfit/dotnet_tests/Library/Library.csproj",
         "projectName": "Library",
-        "projectPath": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/dotnet_tests/Library/Library.csproj",
+        "projectPath": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/git/ivsvutfit/dotnet_tests/Library/Library.csproj",
         "packagesPath": "/home/peterc/.nuget/packages/",
-        "outputPath": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/dotnet_tests/Library/obj/",
+        "outputPath": "/home/peterc/Desktop/FIT/projekt_ivs/proj2/git/ivsvutfit/dotnet_tests/Library/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/peterc/.nuget/NuGet/NuGet.Config"

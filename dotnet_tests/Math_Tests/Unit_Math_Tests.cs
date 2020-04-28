@@ -22,7 +22,7 @@ namespace Math_Tests
     public void Add_Returns_Sum(double x, double y, double expected)
     {
 	var TheClassToTest = new TheClassToTest();
-	var sum = TheClassToTest.Add(x,y);
+	var sum = TheClassToTest.plus(x,y);
 
 	Assert.Equal(expected, sum);
     }
@@ -46,7 +46,7 @@ namespace Math_Tests
 	public void Substract_Returns_Substraction_Value(double x, double y, double expected)
 	{
 		var sub = new TheClassToTest();
-		var res = sub.Substract(x,y);
+		var res = sub.minus(x,y);
 
 		Assert.Equal(expected, res);
 	}
@@ -68,7 +68,7 @@ namespace Math_Tests
 	public void Multiply_Returns_Multiplication_Value(double x, double y, double expected)
 	{
 		var mult = new TheClassToTest();
-		var res = mult.Multiply(x,y);
+		var res = mult.mul(x,y);
 
 		Assert.Equal(expected, res);
 	}
@@ -90,7 +90,7 @@ namespace Math_Tests
 	public void Devide_Returns_Division_Value(double x, double y, double expected)
 	{
 		var dev = new TheClassToTest();
-		var res = dev.Devide(x,y);
+		var res = dev.div(x,y);
 
 		Assert.Equal(expected, res);
 	}
@@ -107,7 +107,7 @@ namespace Math_Tests
 	public void Devide_By_Zero(double x , double y, double expected)
 	{
 		var zero = new TheClassToTest();
-		var res = zero.Devide(x,y);
+		var res = zero.div(x,y);
 
 		Assert.Equal(expected, res);
 	}
@@ -123,7 +123,7 @@ namespace Math_Tests
 	public void Factorial_Returns_Multiplication_Of_Its_All_Element_value(int x, int expected)
 	{
 		var fact = new TheClassToTest();
-		var res = fact.Factorial(x);
+		var res = fact.fact(x);
 
 		Assert.Equal(expected, res);
 	}
@@ -134,44 +134,45 @@ namespace Math_Tests
 	[InlineData(5,2,25)]
 	[InlineData(2,3,8)]
 	[InlineData(-3,3,-27)]
-	[InlineData(-3,3,27)]
 	[InlineData(12,10,61917364224)]
 	[InlineData(5,0,1)]
-	[InlineData(-5,0,-1)]
+	[InlineData(-5,0,1)]
 	[InlineData(0,15,0)]
 	// Desatinne cisla
 	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	// Nemusia prejst kvoli zaokruhlovaniu
 	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	[InlineData(2.5, 2, 6.25)]
-	[InlineData(5.78, 3, 193.100552)]
-	[InlineData(-4.12, 4, 288.13025536)]
+	[InlineData(5.78, 3, 193.10055200000002)]
+	[InlineData(-4.12, 4, 288.13025536000004)]
 	[InlineData(0, 12, 0)]
 	[InlineData(5.2854, 0, 1)]
+	[InlineData(5, 1, 5)]
 	public void Power_Returns_Base_Raised_To_Exponent_Value(double zaklad, int exponent, double expected)
 	{
 		var pow = new TheClassToTest();
-		var res = pow.Power(zaklad, exponent);
+		var res = pow.exp(zaklad, exponent);
 
 		Assert.Equal(expected, res);
 	}
 
 
-	// Testuje Umocnenie 
+	// Testuje Umocnenie na n-tu
 	[Theory]
-	[InlineData(27, 3, 3)]
-	[InlineData(512, 9, 2)]
-	[InlineData(125, 1, 125)]
-	[InlineData(0, 2, 0)]
-	// Desatinne Cisla si urci na aku chces presnost 
-	[InlineData(128,2,11.3137084989847603904)] 
-	[InlineData(27,-3,0.33333333333333333333)]
-	[InlineData(4,-2,0.5)]
-	[InlineData(100000,5,10)]
-	public void Root_Returns_Evoluted_value(double zaklad, int index, double expected)
+	[InlineData(16,2, 4)]
+	[InlineData(81, 2, 9)]
+	[InlineData(15625, 6, 5)]
+	[InlineData(196, 3,   5.80878573356370)]
+	[InlineData(150, -5,  0.36709777158498)]
+	[InlineData(1000, 4,  5.62341325190349)] 
+	[InlineData(0, 8, 0)]
+	[InlineData(9765625, 10, 5)]
+	[InlineData(15.7, 3, 2.50399361701224)]
+	[InlineData(0.08, 5, 0.60341763365451)]
+	public void Root_Returns_Evoluted_value(double zaklad, double index, double expected)
 	{
 		var root = new TheClassToTest();
-		var res = root.Root(zaklad, index);
+		var res = root.sqrt(zaklad, index);
 
 		Assert.Equal(expected, res);
 	}
@@ -188,7 +189,7 @@ namespace Math_Tests
 	public void Abs_Returns_Absolut_Value_of_Given_Number(double x, double expected)
 	{
 		var abs = new TheClassToTest();
-		var res = abs.Abs(x);
+		var res = abs.abs(x);
 
 		Assert.Equal(expected, res);
 	} 
