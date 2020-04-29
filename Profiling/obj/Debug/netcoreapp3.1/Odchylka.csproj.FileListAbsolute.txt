@@ -1,4 +1,0 @@
-/home/peterc/Desktop/FIT/projekt_ivs/proj2/git/ivsvutfit/profiling/Odchylka/obj/Debug/netcoreapp3.1/Odchylka.csprojAssemblyReference.cache
-/home/peterc/Desktop/FIT/projekt_ivs/proj2/git/ivsvutfit/profiling/Odchylka/obj/Debug/netcoreapp3.1/Odchylka.csproj.CoreCompileInputs.cache
-/home/peterc/Desktop/FIT/projekt_ivs/proj2/git/ivsvutfit/profiling/Odchylka/obj/Debug/netcoreapp3.1/Odchylka.AssemblyInfoInputs.cache
-/home/peterc/Desktop/FIT/projekt_ivs/proj2/git/ivsvutfit/profiling/Odchylka/obj/Debug/netcoreapp3.1/Odchylka.AssemblyInfo.cs
