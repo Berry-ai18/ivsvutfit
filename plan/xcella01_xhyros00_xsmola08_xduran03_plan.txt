@@ -1,0 +1,27 @@
+Plán k 2. projektu z IVS
+Študenti: Peter Čellár, xcella01
+	     Adam Hýroš, xhyros00
+	     Patrik Smola, xsmola08
+	     Rastislav Duránik, xduran03
+
+Rozdelenie úloh:
+	Peter Čellár: testy, Profiling, Makefile, odinštalátor
+	Adam Hýroš: GUI, MockUp, Príručka pre uživateža
+	Patrik Smola: Implementacia funkcií kalkulačky, debugging, inštalátor
+	Rastislav Duránik:  Profiling, dokumentácia
+
+Časový plán:
+	Do 5.4 hotové testy, implementácia kalkulačky, debugging a dokumentácia.
+	Do 20.4 dokončiť implementáciu, spravit Makefile, inštalátor, odinštalátor, napísať príručku uživateža.
+	Do 23.4 Kontrola a prípadné opravy, odovzdanie projektu.
+
+Komunikačné kanály a pravidlá:
+	Skype: Náhrada osobného stretnutia. Rekapitulácia spravenej práce, report efektivity a problémov pri svojej práci, prípadné dohodnutie pomoci. Aspoň raz za týždeň. 
+	Osobné stetnutie: Ako aktuálna situácia dovolí. Aspoň 1 krát do konca projektu. Prejdenie celého projektu.
+	Discord: Denná komunikácia.
+	Facebook: Denná komunikácia. Info o postupe v práci a aktuálnych problémoch.
+	Doodle: Časový plán a dohodnutie osobných stretnutí. Kontrola postupu práce. Raz za týždeň.
+
+Systém pre správu verzií:
+	Github
+	Pridelí sa oprávnenie pre uživateža ivskontrola.
