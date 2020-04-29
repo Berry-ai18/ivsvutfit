@@ -1,0 +1,5 @@
+Spustili sme profiling na nasom programe s random cislami.
+Prilozena fokta je vysledok Profileru.
+Profiler nevypisal nazvy funkcii z nasej matematickej kniznici.
+Neviem preco.
+
