@@ -9,7 +9,7 @@ Windows 64bit
 Autori
 ------
 
-Slovaci
+neviem uz
 - xsmola08 Patrik Samuel Smola 
 - xhyros00 Andrej Hyros
 - xduran03 Rastislav Duranik 
