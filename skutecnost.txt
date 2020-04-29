@@ -1,0 +1,13 @@
+
+
+| Plán do |                Úloha                  | Zodpovedný | Skutočný dátum splnenia |
+------------------------------------------------------------------------------------------
+|   5.4   | Testy                                 |  xcella01  |         1.4             |
+|   5.4   | Implementácia kalkulačky              |  xsmola08  |         1.4             |
+|   20.4  | GUI                                   |  xhyros00  |         10.4            |
+|   5.4   | Debugging                             |  xsmola08  |         12.4            |
+|   5.4   | Dokumentácia                          |  xduran03  |         priebežne       |
+|  20.4   | Makefile                              |  xcella01  |         20.4            |
+|  20.4   | Inštalátor                            |  xsmola08  |         17.4            |
+|  20.4   | prírička                              |  xhyros00  |         21.4            |
+------------------------------------------------------------------------------------------
