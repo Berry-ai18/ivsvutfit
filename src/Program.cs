@@ -1,83 +1,58 @@
-﻿using System;
-using System.Text;
-using System.IO;
-using System.Text.RegularExpressions;
-// nasa kniznica
-using Kniznica;
+﻿/*********************************************************************************************
+ * Tento súbor je súčasťou projektu Kalkulačka IVS.
+ *
+ * Tento program je slobodný softvér: môžete ho šíriť a upravovať podľa
+ * ustanovení Všeobecnej verejnej licencie GNU (GNU General Public Licence),
+ * vydávanej nadáciou Free Software Foundation a to buď podľa 3. verzie
+ * tejto Licencie, alebo (podľa vášho uváženia) ktorejkoľvek neskoršej verzie. 
+ * 
+ * Tento program je rozširovaný v nádeji, že bude užitočný, avšak BEZ AKEJKOĽVEK ZÁRUKY.
+ * Neposkytujú sa ani odvodené záruky PREDAJNOSTI alebo VHODNOSTI PRE URČITÝ ÚČEL.
+ * Ďalšie podrobnosti hľadajte vo Všeobecnej verejne licencii GNU.
+ *
+ * Kópiu Všeobecnej verejnej licencie GNU ste mali dostať spolu s týmto programom.
+ * Ak sa tak nestalo, nájdete ju tu: <http://www.gnu.org/licenses/>. 
+ **********************************************************************************************/
 
+/**********************************************************************************************
+ * Názov projektu: Kalkulačka IVS
+ * Súbor: Program.cs
+ * Dátum: 18.04.2020
+ * Posledná zmena: 18.04.2020
+ * Autor: Andrej Hýroš - xhyros00
+ * Popis: Súbor obsahujúci main funkciu aplikácie
+ * ********************************************************************************************/
+/**
+ * @file Program.cs
+ * @brief Súbor obsahujúci main funkciu aplikácie
+ * @author Andrej Hýroš
+ */
 
-// Vytvorit pomocou matematickej kniznice(nasej)                        done         
-// Vyberova smerodatna odchylka                                         done
-// Program cita postupnost cisel z stdin                                done
-// nacita aspon 1000 cisel                                              done                              
-// priklad spustenia: ./Smerodatna_odchylka < data.txt                  done
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
-// Potom tento program dat do profileru 
-// Vstupy velkosti 10,100,1000 cisel                                    done
-// Odovzdat vystup profileru, zhrnutie,kde program travi najviac casu
-// Do protokolu tiez uviest na co sa zamerat pri optimalizacii kodu
-namespace Odchylka
+namespace IVS_Calc_v01
 {
-    public class Program
+    /**
+     * @class Trieda obsahujúca main funkciu aplikácie
+     */
+    static class Program
     {
-        public static void Main()
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        /**
+         * Main funkcia aplikácie
+         */
+        static void Main()
         {
-            var op = new kniznica();
-            int count = 0;
-            double a_priemer = 0;
-            //double pow_artm;
-            double sucet = 0;
-            double rozdiel = 0;
-            string line;
-            double[] arr = new double[5000];
-           
-            while ((line = Console.ReadLine()) != null && line != "\0") {
-                
-                if(line == null){
-                    Console.WriteLine("Nie je vstup");
-                }else{
-                    string[] cast;
-
-                    // rozdeli string podla whitespace
-                    string regex =  "[ ](?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)";
-                    Regex my = new Regex(regex, RegexOptions.Multiline);
-                    cast = my.Split(line);
-
-                    // prekonvertuje string na double
-                    double num = double.Parse(cast[0]);
-                    // ulozime n=ty prvko do pola arr
-                    arr[count] = num;
-                    // sucet
-                    sucet += num;
-                    
-
-                    count++;
-
-                    // aritmeticky priemer
-                    a_priemer = op.div(sucet,count);
-
-                    // (a_priemer)^2 * count
-                    //pow_artm = count * op.exp(a_priemer,2);
-
-                }
-               
-            }   
-
-            double temp;
-            double temp2 = 0;;
-
-            for(int i=0; i < count; i++){
-                temp = op.minus(arr[i], a_priemer);
-                temp2 = op.exp(temp, 2);
-                rozdiel = rozdiel + temp2;
-            }
-
-             temp = op.div(rozdiel, (count-1));
-
-            double vysledok = op.sqrt(temp);
-            
-            Console.WriteLine("Vysledok je: " + vysledok);
-   
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
         }
     }
 }
