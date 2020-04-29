@@ -1,0 +1,4 @@
+xcella01 90 (Profiling, Testy, Makefile)
+xhyros00 110 (GUI, Mockup, Príručka pre uživateľa)
+xsmola08 110 (Matematická knižnica, Debugging, Inštalátor)
+xduran03 90   (Profiling, Dokumentácia)
