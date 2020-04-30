@@ -22,7 +22,7 @@ namespace Odchylka
     {
         public static void Main()
         {
-            var op = new kniznica();
+            kniznica op = new kniznica();
             int count = 0;
             double a_priemer = 0;
             //double pow_artm;
