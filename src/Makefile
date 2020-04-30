@@ -10,55 +10,32 @@
 all: run
 
 run: 
-	src\bin\Debug\IVS_Calc_v01.exe
+	zdrojove_kody\bin\Debug\IVS_Calc_v01.exe
 
 profile: Program.exe
-	cd profiling\Odchylka & Program.exe < data.txt
+	cd profiling & profiling.exe < data.txt
 
 Program.exe:
-	cd profiling\Odchylka & csc kniznica.cs Program.cs
+	cd profiling & csc profiling.cs kniznica.cs
 
-
+ROOT_DIR:=$(shell cd)\..
 PACK_ARCHIVE=xcella01_xhyros00_xsmola08_xduran03.zip
 
-DOC_DIR=doc
+DOC_DIR=doc\html
 INSTALL_DIR=install
-REPO_DIR=repo
+MOCKUP=mockup
+REPO_DIR=$(ROOT_DIR)\..\git
 
-pack: 	
-	if exist "$(DOC_DIR)" del "$(DOC_DIR)" /f /s /q 1>nul & rmdir "$(DOC_DIR)" /s /q
+pack: 
+
+	 cd .. & mkdir "$(PACK_ARCHIVE)" & xcopy "$(INSTALL_DIR)" "$(PACK_ARCHIVE)" & xcopy "$(DOC_DIR)" "$(PACK_ARCHIVE)" & xcopy "$(REPO_DIR)" "$(PACK_ARCHIVE)"
+
 	
-	if exist "$(INSTALL_DIR)" del "$(INSTALL_DIR)" /f /s /q 1>nul & rmdir "$(INSTALL_DIR)" /s /q
-	
-	if exist "$(REPO_DIR)" del "$(REPO_DIR)" /f /s /q 1>nul & rmdir "$(REPO_DIR)" /s /q
-
-	mkdir "$(DOC_DIR)"
-	xcopy /s "IVS_Calc_v01\dconfig" "$(DOC_DIR)"
-
-	mkdir "$(INSTALL_DIR)"
-	xcopy /s "Instalacka" "$(INSTALL_DIR)"
-
-	mkdir "$(REPO_DIR)"
-	make clean
-
-	mkdir "$(PACK_ARCHIVE)" 
-	xcopy "$(INSTALL_DIR)" "$(PACK_ARCHIVE)"
-	xcopy "$(DOC_DIR)" "$(PACK_ARCHIVE)"
-	xcopy "$(REPO_DIR)" "$(PACK_ARCHIVE)"
-
-	del "$(DOC_DIR)" /f /s /q 1>nul
-	rmdir "$(DOC_DIR)" /s /q
-	del "$(INSTALL_DIR)" /f /s /q 1>nul
-	rmdir "$(INSTALL_DIR)" /s /q
-	del "$(REPO_DIR)" /f /s /q 1>nul
-	rmdir "$(REPO_DIR)" /s /q
-	
-
 test: 
 	cd dotnet_tests\Math_Tests & dotnet test
 
 clean:
-#rm -f kalkulacka/*.*
+	cd .. & cd .. & del "$(REPO_DIR)" /f /s /q 1>nul & rmdir "$(REPO_DIR)" /s /q
 
 
 
